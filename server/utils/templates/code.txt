@@ -1,0 +1,6 @@
+async function {{functionName}}({{args}}) {
+    {{{code}}}
+}
+
+
+module.exports = {{functionName}}

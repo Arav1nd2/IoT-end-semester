@@ -1,0 +1,12 @@
+// MQTT publisher
+var mqtt = require('mqtt')
+var client = mqtt.connect("{{connectionString}}")
+var topic = "{{topicName}}"
+var message = '{{sampleValue}}'
+
+client.on('connect', ()=>{
+    setInterval(()=>{
+        client.publish(topic, message)
+        console.log('Message sent!', message)
+    }, 5000)
+})

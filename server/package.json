@@ -1,0 +1,26 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sensors": "node src/misc/startSensors.js",
+    "join": "node src/misc/startJoin.js",
+    "actuator": "node src/misc/startActuators.js",
+    "broker": "node src/broker",
+    "api": "node src/api/"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aedes": "^0.44.0",
+    "async": "^3.2.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "forever": "^3.0.2",
+    "handlebars": "^4.7.6",
+    "mongodb": "^3.6.3",
+    "mosca": "^2.8.3",
+    "mqtt": "^4.2.5"
+  }
+}
